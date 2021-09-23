@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room_5</title>
+    <link href="Room_5.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "row" id="Image">
+        <div class="col-lg-12" id="airplane_img">
+            <img id='Room_5_airplane' src="../img/room_5_airplane.jpg" alt="Load Fail">
+            <p id="Password">
+                * 보라는 마지막을 좋아한다.<br>
+                * 주황은 초록의 등을 보고 있다.<br>
+                * 초록의 앞엔 아무도 없다.<br>
+                * 노랑은 빨강과 주황을 섞으면 나온다.<br>
+                * 남색은 항상 감탄하고 있다.<br>
+            </p>
+        </div>
+    </div>
+    <div class = "row">
+        <div class="col-lg-6" id="answer_text">
+            <input type="text" id="answer" name="answer">
+            <input type="button" id="airplane_answer" onclick='First_compare()' value = "입력">
+        </div>
+        <div class="col-lg-6" id="Hint_1">
+            <img id='Room_5_rainbow' src="../img/room_5_rainbow.jpg" alt="Load Fail">
+        </div><br>
+    </div>
+    <br>
+    <div class = "row">
+        <div class = "col-lg-12" id = "buttons">
+            <button onclick="change_1()" id="button_1" value="1">1</button>
+            <button onclick="change_2()" id="button_2" value="2">2</button>
+            <button onclick="change_3()" id="button_3" value="3">3</button>
+            <button onclick="change_4()" id="button_4" value="4">4</button>
+            <button onclick="change_5()" id="button_5" value="5">5</button>
+            <button onclick="change_6()" id="button_6" value="6">6</button>
+            <button onclick="change_7()" id="button_7" value="7">7</button>
+        </div>
+    </div>
+    <br>
+    <div class = "row">
+        <div class="col-lg-12" id = "final">
+            <button onclick="Reset()" id="reset">Reset</button>
+            <button onclick="Escape()" id="Escape">확인</button>
+        </div>
+    </div>
+    <br>
+    <div class = "row">
+        <div class="col-lg-12" id="Escape_button">
+            <button onclick = "location.href='Success_page.html'">Escape</button>
+        </div>
+    </div>
+
+<script src="Room_5.js"></script>
+</body>
+</html>
