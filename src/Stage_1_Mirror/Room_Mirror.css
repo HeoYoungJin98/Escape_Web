@@ -1,4 +1,4 @@
-#Front_Wall{ /*class 에는 # ID 에는 . */
+#Front_Wall{ /*class 에는 . ID 에는 # */
     width: 100%;
     visibility: visible; /*visible 활성화 hidden 숨김*/
 }
@@ -17,10 +17,11 @@
 
 #View_Lock_1{
     position: fixed;
-    left: 585px;
+    left: 591px;
     bottom: 331px;
     width: 47px;
     height: 46px;
+    opacity: 0;
 }
 
 #Front_Wall .View_Left{ /*Front_Wall class 안에 있는 View_Left 만 설정*/
@@ -150,5 +151,14 @@
     bottom: 170px;
     width: 180px;
     height: 500px;
+    opacity: 0;
+}
+
+#Back_Wall #Destroy{
+    position: fixed;
+    left: 480px;
+    bottom: 390px;
+    width: 510px;
+    height: 200px;
     opacity: 0;
 }

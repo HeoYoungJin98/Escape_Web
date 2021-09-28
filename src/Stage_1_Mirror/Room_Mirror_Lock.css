@@ -1,0 +1,128 @@
+#DoorLock{ /* 이미지 전체화면 */
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    left: 0;    /*왼쪽벽에 딱 붙임*/
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#n1{
+    position: fixed;
+    left: 80px;
+    width: 50px;
+    height: 50px;
+    top: 180px;
+    opacity: 0;
+}
+
+#n2{
+    position: fixed;
+    left: 172px;
+    top: 180px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#n3{
+    position: fixed;
+    right: 84px;
+    top: 180px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#n4{
+    position: fixed;
+    left: 80px;
+    top: 250px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#n5{
+    position: fixed;
+    left: 172px;
+    top: 250px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#n6{
+    position: fixed;
+    right: 84px;
+    top: 250px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#n7{
+    position: fixed;
+    left: 80px;
+    top: 315px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#n8{
+    position: fixed;
+    left: 172px;
+    top: 315px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#n9{
+    position: fixed;
+    right: 84px;
+    top: 315px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#clear{
+    position: fixed;
+    left: 80px;
+    top: 385px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#OK{
+    position: fixed;
+    left: 172px;
+    top: 385px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#Cancel{
+    position: fixed;
+    right: 84px;
+    top: 385px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+#display{
+    position:fixed;
+    top: -32px;
+    left: 80px;
+    font-size: 60px;
+    color: aqua;
+    font-family: 'Gemunu Libre', sans-serif;
+}
