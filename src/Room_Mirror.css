@@ -1,0 +1,154 @@
+#Front_Wall{ /*class 에는 # ID 에는 . */
+    width: 100%;
+    visibility: visible; /*visible 활성화 hidden 숨김*/
+}
+
+#Front_Wall_IMG{ /* 이미지 전체화면 */
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    left: 0;    /*왼쪽벽에 딱 붙임*/
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#View_Lock_1{
+    position: fixed;
+    left: 585px;
+    bottom: 331px;
+    width: 47px;
+    height: 46px;
+}
+
+#Front_Wall .View_Left{ /*Front_Wall class 안에 있는 View_Left 만 설정*/
+    position: fixed;
+    left: 0;
+    bottom: 170px;
+    width: 180px;
+    height: 500px;
+    opacity: 0;
+}
+
+#Front_Wall .View_Right{
+    position: fixed;
+    right: 0;
+    bottom: 170px;
+    width: 180px;
+    height: 500px;
+    opacity: 0;
+}
+
+#face{
+    position: fixed;
+    left: 663px;
+    top: 107px;
+    width: 100px;
+    height: 104px;
+    opacity: 0;
+}
+
+#Left_Wall{
+    width: 100%;
+    visibility: hidden;
+}
+
+#Left_Wall_IMG{ /* 이미지 전체화면 */
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#Left_Wall .View_Front{
+    position: fixed;
+    Right: 0;
+    bottom: 170px;
+    width: 180px;
+    height: 500px;
+    opacity: 0;
+}
+
+#Left_Wall .View_Back{
+    position: fixed;
+    left: 0;
+    bottom: 170px;
+    width: 180px;
+    height: 500px;
+    opacity: 0;
+}
+
+#Right_Wall{
+    visibility: hidden;
+}
+
+#Right_Wall_IMG{ /* 이미지 전체화면 */
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#Right_Wall .View_Front{
+    position: fixed;
+    left: 0;
+    bottom: 170px;
+    width: 180px;
+    height: 500px;
+    opacity: 0;
+}
+
+#Right_Wall .View_Back{
+    position: fixed;
+    right: 0;
+    bottom: 170px;
+    width: 180px;
+    height: 500px;
+    opacity: 0;
+}
+
+#Back_Wall{
+    visibility: hidden;
+}
+
+#Back_Wall_IMG{ /* 이미지 전체화면 */
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#Back_Wall .View_Right{
+    position: fixed;
+    left: 0;
+    bottom: 170px;
+    width: 180px;
+    height: 500px;
+    opacity: 0;
+}
+
+#Back_Wall .View_Left{
+    position: fixed;
+    right: 0;
+    bottom: 170px;
+    width: 180px;
+    height: 500px;
+    opacity: 0;
+}
