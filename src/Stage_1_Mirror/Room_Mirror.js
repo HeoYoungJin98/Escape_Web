@@ -1,15 +1,15 @@
-document.getElementById("face").addEventListener("click",Face_pop)
+/* ---------------------View Face--------------------- */
+document.getElementById("face").addEventListener("click",Face_pop);
 function Face_pop(){
-    window.open("../../img/Room_Mirror/Room_Mirror_Face.jpeg","pop",
-        "width=400,height=500,history=no,resizable=no,status=no,scrollbars=no,menubar=no,left=500,top=150");
+    document.getElementById("Face_modal").style.display = "flex";
 }
-
-document.getElementById("View_Lock_1").addEventListener("click",Lock_pop)
-function Lock_pop(){
-    window.open("Room_Mirror_Lock.html","pop",
-        "width=400,height=500,history=no,resizable=no,status=no,scrollbars=no,menubar=no,left=500,top=150");
+document.getElementById("Face_modal").addEventListener("click",Face_Remove);
+function Face_Remove(){
+    document.getElementById("Face_modal").style.display = "none";
 }
+/* ---------------------View Face--------------------- */
 
+/* ---------------------Room Change--------------------- */
 let Front = document.getElementsByClassName("View_Front");
 for(let i = 0; i<Front.length; i++){
     Front[i].addEventListener("click",View_Front);
@@ -58,7 +58,20 @@ function View_Back(){
     document.getElementById("Right_Wall").style.visibility = "hidden";//우측 활성화
     document.getElementById("Back_Wall").style.visibility = "visible";//후면 비활성화
 }
+/* ---------------------Room Change--------------------- */
 
+/* ---------------------Room_Left View Post--------------------- */
+document.getElementById("View_Post").addEventListener("click",Post_pop);
+function Post_pop(){
+    document.getElementById("Post_modal").style.display = "flex";
+}
+document.getElementById("Post_modal").addEventListener("click",Post_Remove);
+function Post_Remove(){
+    document.getElementById("Post_modal").style.display = "none";
+}
+/* ---------------------Room_Left View Post--------------------- */
+
+/* ---------------------Room_Back Destroy Picture Use Hammer--------------------- */
 let hammer = 1;
 let State = 0;
 document.getElementById("Destroy").addEventListener("click",destroy);
@@ -72,7 +85,88 @@ function destroy(){
         State = 2;
     }
     else if(State === 2){
-        window.open("../../img/Room_Mirror/Room_Mirror_liver.jpeg","pop",
-            "width=400,height=500,history=no,resizable=no,status=no,scrollbars=no,menubar=no,left=500,top=150");
+        document.getElementById("destroy_modal").style.display = "flex";
+        document.getElementById("destroy_modal").addEventListener("click",Face_Remove);
+        function Face_Remove(){
+            document.getElementById("destroy_modal").style.display = "none";
+        }
     }
 }
+/* ---------------------Room_Back Destroy Picture Use Hammer--------------------- */
+
+/* ---------------------DoorLock--------------------- */
+let Answer_Array = [4,4,6,9]
+let Input_Array = [0,0,0,0];
+let Previous_display = '';
+let Present_display = '';
+document.getElementById("View_Lock_1").addEventListener("click",DoorLock_pop);
+function DoorLock_pop(){
+    document.getElementById("DoorLock_modal").style.display = "flex";
+    Input_Array.length = 0;
+}
+document.getElementById("DoorLock").addEventListener("click",DoorLock_Remove);
+function DoorLock_Remove(){
+    document.getElementById("DoorLock_modal").style.display = "none";
+}
+
+let Click = document.getElementsByClassName("btn");
+for(let i = 0; i<Click.length; i++){
+    Click[i].addEventListener("click",function(){Input_Value(this.value)});
+    console.log(Click[i]);
+}
+
+function Input_Value(x){
+    if(Input_Array.length>=4){
+        Input_Array.length = 0;
+        Present_display = "";
+        Previous_display = "";
+        document.getElementById("display").innerHTML = Present_display;
+    }else{
+        Input_Array.push(x);
+        Previous_display = Present_display;
+        Present_display += String(x);
+        document.getElementById("display").innerHTML = Present_display;
+    }
+    console.log(Input_Array);
+}
+document.getElementById("clear").addEventListener("click",Clear);
+function Clear(){
+    Input_Array.length = 0;
+    Present_display = "";
+    Previous_display = "";
+    document.getElementById("display").innerHTML = Present_display;
+}
+//배열의 길이를 0으로 설정시 값이 초기화된다. 그 후 공백 출력
+document.getElementById("Cancel").addEventListener("click",Cancel);
+function Cancel(){
+    let New_display = '';
+    Input_Array.pop();
+    for(let i=0; i<Input_Array.length; i++){
+        New_display += Input_Array[i];
+    }
+    Present_display = New_display;
+    document.getElementById("display").innerHTML = Present_display;
+}
+
+document.getElementById("OK").addEventListener("click",Test);
+function Test(){
+    let result = 1;
+    for(let x = 0; x < Answer_Array.length; x++){
+        console.log(Answer_Array[x]);
+        console.log(Input_Array[x]);
+        if(Answer_Array[x].toString() === Input_Array[x].toString()){
+            result = 1;
+        }else{
+            Input_Array.length = 0;
+            Present_display = "";
+            Previous_display = "";
+            document.getElementById("display").innerHTML = Present_display;
+            result = 0;
+        }
+    }
+    if(result === 1){
+        document.getElementById("DoorLock_modal").style.display = "none";
+        document.getElementById("Front_Wall_IMG").src = "../../img/Room_Mirror/Room_Mirror_Door_Open.jpeg";
+    }
+}
+/* ---------------------DoorLock--------------------- */

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Room_Mirror</title>
     <link href="Room_Mirror.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id = "Front_Wall">
@@ -12,11 +15,35 @@
         <button class = "View_Left">c</button>
         <button class = "View_Right">d</button>
         <button id = "face">b</button>
+        <div class = "modal">
+            <img id = "Face_modal" src="../../img/Room_Mirror/Room_Mirror_Face.jpeg" alt="Loading Fail!">
+        </div>
+        <div id = "DoorLock_modal">
+            <img id = "DoorLock" src="../../img/Room_Mirror/Room_Mirror_DoorLock.jpeg" alt="Loading Fail!">
+            <p id="display"></p>
+            <button class = "btn" id = "n1" value="1"><strong>1</strong></button>
+            <button class = "btn" id = "n2" value="2"><strong>2</strong></button>
+            <button class = "btn" id = "n3" value="3"><strong>3</strong></button>
+            <button class = "btn" id = "n4" value="4"><strong>4</strong></button>
+            <button class = "btn" id = "n5" value="5"><strong>5</strong></button>
+            <button class = "btn" id = "n6" value="6"><strong>6</strong></button>
+            <button class = "btn" id = "n7" value="7"><strong>7</strong></button>
+            <button class = "btn" id = "n8" value="8"><strong>8</strong></button>
+            <button class = "btn" id = "n9" value="9"><strong>9</strong></button>
+            <button class = "clear" id="clear"><strong>=</strong></button>
+            <button class = "OK" id = "OK" value="0"><strong>0</strong></button>
+            <button class = "Cancel" id="Cancel"><strong>#</strong></button>
+        </div>
     </div>
     <div id = "Left_Wall">
         <img id = "Left_Wall_IMG" src = "../../img/Room_Mirror/Room_Mirror_Safe_Lock.jpeg" alt="Loading Fail!">
         <button class = "View_Back">a</button>
         <button class = "View_Front">b</button>
+        <button id = "View_Post">Post</button>
+        <div class = "Post">
+            <img id = "Post_modal" src="../../img/Room_Mirror/Room_Mirror_Postit.png" alt="Loading Fail!">
+        </div>
+        <button id = "View_Lock_2">Lock</button>
     </div>
     <div id = "Right_Wall">
         <img id = "Right_Wall_IMG" src = "../../img/Room_Mirror/Room_Mirror_Right.jpeg" alt="Loading Fail!">
@@ -28,6 +55,9 @@
         <button class = "View_Left">Left</button>
         <button class = "View_Right">Right</button>
         <button id = "Destroy">Destroy</button>
+        <div class = "modal">
+            <img id = "destroy_modal" src="../../img/Room_Mirror/Room_Mirror_liver.jpeg" alt="Loading Fail!">
+        </div>
     </div>
     <script src = "Room_Mirror.js"></script>
 </body>
