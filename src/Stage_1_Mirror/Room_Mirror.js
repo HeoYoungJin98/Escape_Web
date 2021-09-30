@@ -8,7 +8,6 @@ function Face_Remove(){
     document.getElementById("Face_modal").style.display = "none";
 }
 /* ---------------------View Face--------------------- */
-
 /* ---------------------Room Change--------------------- */
 let Front = document.getElementsByClassName("View_Front");
 for(let i = 0; i<Front.length; i++){
@@ -59,7 +58,6 @@ function View_Back(){
     document.getElementById("Back_Wall").style.visibility = "visible";//후면 비활성화
 }
 /* ---------------------Room Change--------------------- */
-
 /* ---------------------Room_Left View Post--------------------- */
 document.getElementById("View_Post").addEventListener("click",Post_pop);
 function Post_pop(){
@@ -70,7 +68,6 @@ function Post_Remove(){
     document.getElementById("Post_modal").style.display = "none";
 }
 /* ---------------------Room_Left View Post--------------------- */
-
 /* ---------------------Room_Back Destroy Picture Use Hammer--------------------- */
 let hammer = 0;
 let State = 0;
