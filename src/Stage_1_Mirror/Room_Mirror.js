@@ -72,7 +72,7 @@ function Post_Remove(){
 /* ---------------------Room_Left View Post--------------------- */
 
 /* ---------------------Room_Back Destroy Picture Use Hammer--------------------- */
-let hammer = 1;
+let hammer = 0;
 let State = 0;
 document.getElementById("Destroy").addEventListener("click",destroy);
 function destroy(){
@@ -93,7 +93,6 @@ function destroy(){
     }
 }
 /* ---------------------Room_Back Destroy Picture Use Hammer--------------------- */
-
 /* ---------------------DoorLock--------------------- */
 let Answer_Array = [4,4,6,9]
 let Input_Array = [0,0,0,0];
@@ -167,6 +166,72 @@ function Test(){
     if(result === 1){
         document.getElementById("DoorLock_modal").style.display = "none";
         document.getElementById("Front_Wall_IMG").src = "../../img/Room_Mirror/Room_Mirror_Door_Open.jpeg";
+        document.getElementById("View_Lock_1").style.visibility = "hidden";
+        document.getElementById("face").style.visibility = "hidden";
+        document.getElementById("Escape").style.visibility = "visible";
     }
 }
 /* ---------------------DoorLock--------------------- */
+/* ---------------------SafeLock--------------------- */
+let Safe_Answer_Array = [2,4,9,8];
+let Safe_Input_Array = [0,0,0,0];
+let Safe_Previous_display = '';
+let Safe_Present_display = '';
+document.getElementById("View_Lock_2").addEventListener("click",Safe_Lock_pop);
+function Safe_Lock_pop(){
+    document.getElementById("SafeLock_modal").style.display = "flex";
+    Safe_Input_Array.length = 0;
+}
+document.getElementById("SafeLock").addEventListener("click",Safe_Lock_Remove);
+function Safe_Lock_Remove(){
+    document.getElementById("SafeLock_modal").style.display = "none";
+}
+
+let Safe_Click = document.getElementsByClassName("Safe_btn");
+for(let i = 0; i<Safe_Click.length; i++){
+    Safe_Click[i].addEventListener("click",function(){Safe_Input_Value(this.value)});
+}
+
+function Safe_Input_Value(x){
+    if(Safe_Input_Array.length >= 4){
+        let result = 1;
+        for(let x = 0; x < Safe_Answer_Array.length; x++){
+            if(Safe_Answer_Array[x].toString() === Safe_Input_Array[x].toString()){
+                result = 1;
+            }else{
+                Safe_Input_Array.length = 0;
+                Safe_Present_display = "";
+                Safe_Previous_display = "";
+                document.getElementById("display_Safe").innerHTML = Safe_Present_display;
+                result = 0;
+            }
+        }
+        if(result === 1){
+            document.getElementById("SafeLock_modal").style.display = "none";
+            document.getElementById("Left_Wall_IMG").src = "../../img/Room_Mirror/Room_Mirror_Safe_Open.jpeg";
+            document.getElementById("View_Post").style.visibility = "hidden";
+            document.getElementById("View_Lock_2").style.visibility = "hidden";
+            document.getElementById("Get_hammer").style.visibility = "visible";
+        }
+    }else{
+        Safe_Input_Array.push(x);
+        Safe_Previous_display = Safe_Present_display;
+        Safe_Present_display += String(x);
+        document.getElementById("display_Safe").innerHTML = Safe_Present_display;
+    }
+}
+/* ---------------------SafeLock--------------------- */
+/* ---------------------Get_Hammer---------------------*/
+document.getElementById("Get_hammer").addEventListener("click",Get_Hammer)
+function Get_Hammer(){
+    document.getElementById("Left_Wall_IMG").src = "../../img/Room_Mirror/Room_Mirror_Safe_Get.jpeg";
+    document.getElementById("Get_hammer").style.visibility = "hidden";
+    hammer = 1;
+}
+/* ---------------------Get_Hammer---------------------*/
+/* ---------------------Escape---------------------*/
+document.getElementById("Escape").addEventListener("click", newPage)
+function newPage() {
+    window.location = "../Success_page.html";
+}
+/* ---------------------Escape---------------------*/

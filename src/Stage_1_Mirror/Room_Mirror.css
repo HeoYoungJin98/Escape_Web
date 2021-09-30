@@ -61,6 +61,16 @@
     opacity: 0;
 }
 
+#Escape{
+    position: absolute;
+    left: 578px;
+    top: 238px;
+    width: 282px;
+    height: 296px;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
 #Left_Wall{
     width: 100%;
     visibility: hidden;
@@ -107,7 +117,7 @@
 }
 
 #Left_Wall #View_Post{
-    position: fixed;
+    position: absolute;
     left: 657px;
     bottom: 245px;
     width: 75px;
@@ -116,7 +126,7 @@
 }
 
 #Left_Wall #View_Lock_2{
-    position: fixed;
+    position: absolute;
     left: 680px;
     bottom: 200px;
     width: 40px;
@@ -353,4 +363,132 @@
     top: 80px;
     width: 300px;
     height: 400px;
+}
+
+#SafeLock{
+    width: 100%;
+    max-height: 100%;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#num1{
+    position: absolute;
+    left: 25px;
+    width: 62px;
+    height: 62px;
+    top: 147px;
+    opacity: 0;
+}
+
+#num2{
+    position: absolute;
+    left: 117px;
+    top: 147px;
+    width: 62px;
+    height: 62px;
+    opacity: 0;
+}
+
+#num3{
+    position: absolute;
+    right: 33px;
+    top: 147px;
+    width: 62px;
+    height: 62px;
+    opacity: 0;
+}
+
+#num4{
+    position: absolute;
+    left: 27px;
+    top: 242px;
+    width: 62px;
+    height: 62px;
+    opacity: 0;
+}
+
+#num5{
+    position: absolute;
+    left: 119px;
+    top: 242px;
+    width: 62px;
+    height: 62px;
+    opacity: 0;
+}
+
+#num6{
+    position: absolute;
+    right: 31px;
+    top: 242px;
+    width: 62px;
+    height: 62px;
+    opacity: 0;
+}
+
+#num7{
+    position: absolute;
+    left: 25px;
+    top: 335px;
+    width: 62px;
+    height: 62px;
+    opacity: 0;
+}
+
+#num8{
+    position: absolute;
+    left: 117px;
+    top: 335px;
+    width: 62px;
+    height: 62px;
+    opacity: 0;
+}
+
+#num9{
+    position: absolute;
+    right: 33px;
+    top: 335px;
+    width: 62px;
+    height: 62px;
+    opacity: 0;
+}
+
+#display_Safe{
+    position: absolute;
+    top: -4px;
+    left: 87px;
+    font-size: 60px;
+    color: aqua;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+#SafeLock_modal{
+    position: absolute;
+    display: none;
+    left: 570px;
+    top: 80px;
+    width: 300px;
+    height: 400px;
+}
+
+#SafeLock{
+    position: absolute;
+    top: 80px;
+    width: 300px;
+    height: 400px;
+}
+
+#Get_hammer{
+    position: absolute;
+    left: 712px;
+    bottom: 178px;
+    width: 89px;
+    height: 58px;
+    opacity: 0;
+    visibility: hidden;
 }
