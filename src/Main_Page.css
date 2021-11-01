@@ -1,0 +1,58 @@
+#Banner_Text{
+    text-align: center;
+    border-bottom: solid 4px skyblue;
+    padding-bottom: 4px;
+}
+
+#Theme_Block{
+    border: solid 4px powderblue;
+    height: 400px;
+}
+
+#Choice_Theme_Text{
+    border: solid 1px black;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#Choice_Theme{
+    margin: 20px;
+}
+
+#Theme_1{
+    background-image: url("../img/Room_Mirror/Room_Mirror_Face.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+    height: 84px;
+    width: 84px;
+}
+
+#Login_Block{
+    border: solid 4px cornflowerblue;
+    height: 400px;
+}
+#login_space{
+    margin-top: 10px;
+}
+#login{
+  height: 60px;
+}
+
+#Notice{
+    border: solid 4px dimgray;
+    height: 230px;
+}
+
+.button{
+  margin: 10px;
+  border-radius: 10px;
+  width: 287px;
+  background-color: skyblue;
+}
+
+#AD{
+    border: solid 4px darkseagreen;
+    height: 230px;
+}
