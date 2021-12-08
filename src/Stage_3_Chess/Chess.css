@@ -36,7 +36,8 @@
   top: 10%;
   width: 750px;
   height: 500px;
-  background-color: skyblue;
+  background-image: url("../../img/Chess/Chess_Modal.jpg");
+  background-size: cover;
 }
 
 table{
@@ -49,11 +50,14 @@ td,tr{
 td{
   width: 110px;
   height: 83px;
+  text-align: right;
 }
+
 #Hint{
-  top: 30px;
+  top: 2%;
   font-family: 'Dokdo', cursive;
-  font-size: 20px;
+  font-size: 23px;
+  color: white;
 }
 #Boards{
   position: absolute;
@@ -61,9 +65,9 @@ td{
 }
 
 #Chess_2, #Chess_3, #Chess_6, #Chess_7, #Chess_10, #Chess_11{
-  background-color: white;
+  background-color: ivory;
 }
 
 #Chess_1, #Chess_4, #Chess_5, #Chess_8, #Chess_9, #Chess_12{
-  background-color: black;
+  background-color: gray;
 }
