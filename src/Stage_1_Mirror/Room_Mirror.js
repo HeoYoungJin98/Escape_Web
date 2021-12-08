@@ -1,3 +1,6 @@
+$(document).ready(function(){
+  alert("정신을 차려보니 이상한 방에 갇혀있다. 내가 왜 여기 있는 거지?");
+})
 /* ---------------------View Face--------------------- */
 document.getElementById("face").addEventListener("click",Face_pop);
 function Face_pop(){
@@ -102,7 +105,7 @@ document.getElementById("View_Lock_1").addEventListener("click",DoorLock_pop);
 function DoorLock_pop(){
     document.getElementById("DoorLock_modal").style.display = "flex";
     Input_Array.length = 0;
-    alert("도어락 하단에 작게 *=c 0=O #=r이라고 적혀 있다.");
+    alert("도어락 하단에 작게 *=clear 0=OK #=remove 라고 적혀 있다.");
 }
 document.getElementById("DoorLock").addEventListener("click",DoorLock_Remove);
 function DoorLock_Remove(){
@@ -153,8 +156,6 @@ document.getElementById("OK").addEventListener("click",Test);
 function Test(){
     let result = 1;
     for(let x = 0; x < Answer_Array.length; x++){
-        console.log(Answer_Array[x]);
-        console.log(Input_Array[x]);
         if(Answer_Array[x].toString() === Input_Array[x].toString()){
             result = 1;
         }else{

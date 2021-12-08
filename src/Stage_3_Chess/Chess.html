@@ -18,7 +18,8 @@
       <button id="View_Chess">a</button>
       <button id="window">b</button>
       <div id="Chess_Modal" class="row">
-        <div class="col-lg-4" id = "Hint">
+        <div class="col-lg-5" id = "Hint">
+          <p>* 모든 체스말은 알파벳 순서를 따른다</p>
           <p>1. 졸병은 D행에 있다.</p>
           <p>2. 여왕은 하얀 드레스를 입고 있다.</p>
           <p>3. 전차는 시야를 가리는 것을 싫어한다.</p>
@@ -28,41 +29,89 @@
           <p>7. 주교는 졸병과 반대이다.</p>
           <p>8. 졸병은 여왕을 호위한다.</p>
         </div>
-        <div class="col-lg-4" id = "Chesses">
-
+        <div class="col-lg-3" id = "Chesses">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="../../img/Chess/Chess_Pawn.png" alt="Loading_Fail" id = "Pawn" value = "Pawn" draggable="true">
+            </div>
+            <div class="col-lg-6">
+                <img src="../../img/Chess/Chess_Rook.png" alt="Loading_Fail" id = "Rook" value = "Rook" draggable="true">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <p>Pawn</p>
+            </div>
+            <div class="col-lg-6">
+              <p>Rook</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="../../img/Chess/Chess_King.png" alt="Loading_Fail" id = "King" value = "King" draggable="true">
+            </div>
+            <div class="col-lg-6">
+              <img src="../../img/Chess/Chess_Bishop.png" alt="Loading_Fail" id = "Bishop" value = "Bishop" draggable="true">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <p>King</p>
+            </div>
+            <div class="col-lg-6">
+              <p>Bishop</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="../../img/Chess/Chess_Queen.png" alt="Loading_Fail" id = "Queen" value = "Queen" draggable="true">
+            </div>
+            <div class="col-lg-6">
+              <img src="../../img/Chess/Chess_Knight.png" alt="Loading_Fail" id = "Knight" value = "Knight" draggable="true">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <p>Queen</p>
+            </div>
+            <div class="col-lg-6">
+              <p>Knight</p>
+            </div>
+          </div>
         </div>
         <div class="col-lg-4" id = "Boards">
           <table>
             <tr>
-              <td id = "Chess_1"></td>
-              <td id = "Chess_2">A</td>
+              <td id = "Chess_0"></td>
+              <td id = "Chess_1">A</td>
             </tr>
             <tr>
-              <td id = "Chess_3"></td>
-              <td id = "Chess_4">B</td>
+              <td id = "Chess_2"></td>
+              <td id = "Chess_3">B</td>
             </tr>
             <tr>
-              <td id = "Chess_5"></td>
-              <td id = "Chess_6">C</td>
+              <td id = "Chess_4"></td>
+              <td id = "Chess_5">C</td>
             </tr>
             <tr>
-              <td id = "Chess_7"></td>
-              <td id = "Chess_8">D</td>
+              <td id = "Chess_6"></td>
+              <td id = "Chess_7">D</td>
             </tr>
             <tr>
-              <td id = "Chess_9"></td>
-              <td id = "Chess_10">E</td>
+              <td id = "Chess_8"></td>
+              <td id = "Chess_9">E</td>
             </tr>
             <tr>
-              <td id = "Chess_11"></td>
-              <td id = "Chess_12">F</td>
+              <td id = "Chess_10"></td>
+              <td id = "Chess_11">F</td>
             </tr>
           </table>
         </div>
       </div>
     </div>
     <div id="Chess_Clear">
-
+      <img src="../../img/Chess/Chess_clear.jpeg" alt="Loading_Fail" id="Chess_clear_img">
+      <button id = "Next_Room">
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="Chess.js"></script>

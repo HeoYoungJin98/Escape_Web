@@ -12,6 +12,23 @@
   top: 0;
   bottom: 0;
 }
+
+#Chess_Clear{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#Chess_clear_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
 #window{
   position: absolute;
   width: 500px;
@@ -35,7 +52,7 @@
   left: 25%;
   top: 10%;
   width: 750px;
-  height: 500px;
+  height: 510px;
   background-image: url("../../img/Chess/Chess_Modal.jpg");
   background-size: cover;
 }
@@ -53,15 +70,26 @@ td{
   text-align: right;
 }
 
+#Chesses img{
+  width: 100px;
+  height: 90%;
+}
+
 #Hint{
-  top: 2%;
+  top: 5%;
   font-family: 'Dokdo', cursive;
-  font-size: 23px;
+  font-size: 22px;
   color: white;
 }
+
 #Boards{
   position: absolute;
   right: 0;
+}
+
+#Chesses p{
+  text-align: right;
+  color: black;
 }
 
 #Chess_2, #Chess_3, #Chess_6, #Chess_7, #Chess_10, #Chess_11{
@@ -70,4 +98,17 @@ td{
 
 #Chess_1, #Chess_4, #Chess_5, #Chess_8, #Chess_9, #Chess_12{
   background-color: gray;
+}
+
+#Chess_Modal{
+  display: none;
+}
+
+#Next_Room{
+  position: absolute;
+  width: 220px;
+  height: 330px;
+  left: 33%;
+  top: 12%;
+  opacity: 0;
 }
