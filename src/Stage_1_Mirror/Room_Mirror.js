@@ -103,12 +103,14 @@ function DoorLock_pop(){
 document.getElementById("DoorLock").addEventListener("click",DoorLock_Remove);
 function DoorLock_Remove(){
     document.getElementById("DoorLock_modal").style.display = "none";
+    Input_Array.length = 0;
+    document.getElementById("display").innerHTML = "";
+    Present_display = "";
 }
 
 let Click = document.getElementsByClassName("btn");
 for(let i = 0; i<Click.length; i++){
     Click[i].addEventListener("click",function(){Input_Value(this.value)});
-    console.log(Click[i]);
 }
 
 function Input_Value(x){
@@ -123,7 +125,6 @@ function Input_Value(x){
         Present_display += String(x);
         document.getElementById("display").innerHTML = Present_display;
     }
-    console.log(Input_Array);
 }
 document.getElementById("clear").addEventListener("click",Clear);
 function Clear(){
@@ -170,7 +171,7 @@ function Test(){
 }
 /* ---------------------DoorLock--------------------- */
 /* ---------------------SafeLock--------------------- */
-let Safe_Answer_Array = [2,4,9,8];
+let Safe_Answer_Array = [2,4,9,3];
 let Safe_Input_Array = [0,0,0,0];
 let Safe_Previous_display = '';
 let Safe_Present_display = '';
@@ -182,6 +183,8 @@ function Safe_Lock_pop(){
 document.getElementById("SafeLock").addEventListener("click",Safe_Lock_Remove);
 function Safe_Lock_Remove(){
     document.getElementById("SafeLock_modal").style.display = "none";
+    Safe_Input_Array.length = 0;
+    Safe_Present_display = "";
 }
 
 let Safe_Click = document.getElementsByClassName("Safe_btn");
@@ -229,6 +232,6 @@ function Get_Hammer(){
 /* ---------------------Escape---------------------*/
 document.getElementById("Escape").addEventListener("click", newPage)
 function newPage() {
-    window.location = "../Success_page.html";
+    window.location = "../Stage_2_HallWay/HallWay.html";
 }
 /* ---------------------Escape---------------------*/

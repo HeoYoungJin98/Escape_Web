@@ -27,46 +27,46 @@
 
 #View_Lock_1{
     position: absolute;
-    left: 591px;
-    bottom: 331px;
-    width: 47px;
-    height: 46px;
+    left: 41%;
+    bottom: 45%;
+    width: 50px;
+    height: 50px;
     opacity: 0;
 }
 
 #Front_Wall .View_Left{ /*Front_Wall class 안에 있는 View_Left 만 설정*/
     position: absolute;
     left: 0;
-    bottom: 170px;
-    width: 216px;
-    height: 500px;
+    bottom: 5%;
+    width: 200px;
+    height: 700px;
     opacity: 0;
 }
 
 #Front_Wall .View_Right{
     position: absolute;
     right: 0;
-    bottom: 170px;
-    width: 216px;
-    height: 500px;
+    bottom: 5%;
+    width: 200px;
+    height: 700px;
     opacity: 0;
 }
 
 #face{
     position: absolute;
-    left: 663px;
-    top: 107px;
-    width: 112px;
-    height: 104px;
+    left: 45%;
+    top: 13%;
+    width: 150px;
+    height: 130px;
     opacity: 0;
 }
 
 #Escape{
     position: absolute;
-    left: 578px;
-    top: 238px;
-    width: 282px;
-    height: 296px;
+    left: 40%;
+    top: 33%;
+    width: 300px;
+    height: 300px;
     opacity: 0;
     visibility: hidden;
 }
@@ -100,26 +100,26 @@
 
 #Left_Wall .View_Front{
     position: fixed;
-    Right: 0;
-    bottom: 170px;
-    width: 216px;
-    height: 500px;
+    right: 0;
+    bottom: 5%;
+    width: 200px;
+    height: 700px;
     opacity: 0;
 }
 
 #Left_Wall .View_Back{
     position: fixed;
     left: 0;
-    bottom: 170px;
-    width: 216px;
-    height: 500px;
+    bottom: 5%;
+    width: 200px;
+    height: 700px;
     opacity: 0;
 }
 
 #Left_Wall #View_Post{
     position: absolute;
-    left: 657px;
-    bottom: 245px;
+    left: 46%;
+    bottom: 33%;
     width: 75px;
     height: 50px;
     opacity: 0;
@@ -127,9 +127,9 @@
 
 #Left_Wall #View_Lock_2{
     position: absolute;
-    left: 680px;
-    bottom: 200px;
-    width: 40px;
+    left: 47%;
+    bottom: 27%;
+    width: 45px;
     height: 40px;
     opacity: 0;
 }
@@ -153,18 +153,18 @@
 #Right_Wall .View_Front{
     position: fixed;
     left: 0;
-    bottom: 170px;
-    width: 216px;
-    height: 500px;
+    bottom: 5%;
+    width: 200px;
+    height: 700px;
     opacity: 0;
 }
 
 #Right_Wall .View_Back{
     position: fixed;
     right: 0;
-    bottom: 170px;
-    width: 216px;
-    height: 500px;
+    bottom: 5%;
+    width: 200px;
+    height: 700px;
     opacity: 0;
 }
 
@@ -196,27 +196,27 @@
 #Back_Wall .View_Right{
     position: fixed;
     left: 0;
-    bottom: 170px;
-    width: 180px;
-    height: 500px;
+    bottom: 5%;
+    width: 200px;
+    height: 700px;
     opacity: 0;
 }
 
 #Back_Wall .View_Left{
     position: fixed;
     right: 0;
-    bottom: 170px;
-    width: 180px;
-    height: 500px;
+    bottom: 5%;
+    width: 200px;
+    height: 700px;
     opacity: 0;
 }
 
 #Back_Wall #Destroy{
     position: fixed;
-    left: 480px;
-    bottom: 390px;
-    width: 510px;
-    height: 200px;
+    left: 31%;
+    bottom: 50%;
+    width: 620px;
+    height: 250px;
     opacity: 0;
 }
 
@@ -234,17 +234,17 @@
 
 #n1{
     position: absolute;
-    left: 55px;
+    left: 18%;
     width: 48px;
     height: 48px;
-    top: 180px;
+    top: 45%;
     opacity: 0;
 }
 
 #n2{
     position: absolute;
-    left: 124px;
-    top: 180px;
+    left: 41.5%;
+    top: 45%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -252,8 +252,8 @@
 
 #n3{
     position: absolute;
-    right: 59px;
-    top: 180px;
+    left: 65%;
+    top: 45%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -261,8 +261,8 @@
 
 #n4{
     position: absolute;
-    left: 55px;
-    top: 235px;
+    left: 18%;
+    top: 59%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -270,8 +270,8 @@
 
 #n5{
     position: absolute;
-    left: 124px;
-    top: 235px;
+    left: 41.5%;
+    top: 59%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -279,8 +279,8 @@
 
 #n6{
     position: absolute;
-    right: 59px;
-    top: 235px;
+    left: 65%;
+    top: 59%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -288,8 +288,8 @@
 
 #n7{
     position: absolute;
-    left: 55px;
-    top: 289px;
+    left: 18%;
+    top: 73%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -297,8 +297,8 @@
 
 #n8{
     position: absolute;
-    left: 124px;
-    top: 289px;
+    left: 41.5%;
+    top: 73%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -306,8 +306,8 @@
 
 #n9{
     position: absolute;
-    right: 59px;
-    top: 289px;
+    left: 65%;
+    top: 73%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -315,8 +315,8 @@
 
 #clear{
     position: absolute;
-    left: 55px;
-    top: 343px;
+    left: 18%;
+    top: 87%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -324,8 +324,8 @@
 
 #OK{
     position: absolute;
-    left: 124px;
-    top: 343px;
+    left: 41.5%;
+    top: 87%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -333,8 +333,8 @@
 
 #Cancel{
     position: absolute;
-    right: 59px;
-    top: 343px;
+    left: 65%;
+    top: 87%;
     width: 48px;
     height: 48px;
     opacity: 0;
@@ -379,82 +379,82 @@
 
 #num1{
     position: absolute;
-    left: 25px;
-    width: 62px;
-    height: 62px;
-    top: 147px;
+    left: 8%;
+    top: 36%;
+    width: 65px;
+    height: 65px;
     opacity: 0;
 }
 
 #num2{
     position: absolute;
-    left: 117px;
-    top: 147px;
-    width: 62px;
-    height: 62px;
+    left: 38%;
+    top: 36%;
+    width: 65px;
+    height: 65px;
     opacity: 0;
 }
 
 #num3{
     position: absolute;
-    right: 33px;
-    top: 147px;
-    width: 62px;
-    height: 62px;
+    left: 68%;
+    top: 36%;
+    width: 65px;
+    height: 65px;
     opacity: 0;
 }
 
 #num4{
     position: absolute;
-    left: 27px;
-    top: 242px;
-    width: 62px;
-    height: 62px;
+    left: 8%;
+    top: 60%;
+    width: 65px;
+    height: 65px;
     opacity: 0;
 }
 
 #num5{
     position: absolute;
-    left: 119px;
-    top: 242px;
-    width: 62px;
-    height: 62px;
+    left: 38%;
+    top: 60%;
+    width: 65px;
+    height: 65px;
     opacity: 0;
 }
 
 #num6{
     position: absolute;
-    right: 31px;
-    top: 242px;
-    width: 62px;
-    height: 62px;
+    left: 68%;
+    top: 60%;
+    width: 65px;
+    height: 65px;
     opacity: 0;
 }
 
 #num7{
     position: absolute;
-    left: 25px;
-    top: 335px;
-    width: 62px;
-    height: 62px;
+    left: 8%;
+    top: 83%;
+    width: 65px;
+    height: 65px;
     opacity: 0;
 }
 
 #num8{
     position: absolute;
-    left: 117px;
-    top: 335px;
-    width: 62px;
-    height: 62px;
+    left: 38%;
+    top: 83%;
+    width: 65px;
+    height: 65px;
     opacity: 0;
 }
 
 #num9{
     position: absolute;
-    right: 33px;
-    top: 335px;
-    width: 62px;
-    height: 62px;
+    left: 68%;
+    top: 83%;
+    width: 65px;
+    height: 65px;
     opacity: 0;
 }
 
@@ -485,10 +485,10 @@
 
 #Get_hammer{
     position: absolute;
-    left: 712px;
-    bottom: 178px;
-    width: 89px;
-    height: 58px;
+    left: 49%;
+    bottom: 24%;
+    width: 100px;
+    height: 60px;
     opacity: 0;
     visibility: hidden;
 }

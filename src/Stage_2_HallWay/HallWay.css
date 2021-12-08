@@ -1,0 +1,41 @@
+#Front_Wall{
+  width: 100%;
+}
+
+#Front{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  overflow: auto;
+  visibility: flex;
+}
+
+#View_Elevator{
+  position: absolute;
+  left: 42%;
+  top: 23%;
+  width: 230px;
+  height: 288px;
+  opacity: 0;
+}
+
+#View_Button{
+  position: absolute;
+  right: 31%;
+  top: 31%;
+  width: 52px;
+  height: 102px;
+  opacity: 0;
+}
+
+#Enter_Room{
+  position: absolute;
+  left: 8%;
+  top: 40%;
+  width: 130px;
+  height: 320px;
+  opacity: 0;
+}
