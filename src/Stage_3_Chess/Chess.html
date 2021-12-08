@@ -2,9 +2,69 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="Chess.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+    <title>Chess</title>
   </head>
   <body>
+    <div id="Chess_default">
+      <img id="Chess_default_img" src="../../img/Chess/Chess_default.jpeg" alt="Loading Fail!">
+      <button id="View_Chess">a</button>
+      <button id="window">b</button>
+      <div id="Chess_Modal" class="row">
+        <div class="col-lg-4" id = "Hint">
+          <p>1. 졸병은 D행에 있다.</p>
+          <p>2. 여왕은 하얀 드레스를 입고 있다.</p>
+          <p>3. 전차는 시야를 가리는 것을 싫어한다.</p>
+          <p>4. 기사와 왕은 사이가 좋다.</p>
+          <p>5. 졸병은 기사를 따른다.</p>
+          <p>6. 왕은 비가 오길 기도하며 기우제를 지낸다.</p>
+          <p>7. 주교는 졸병과 반대이다.</p>
+          <p>8. 졸병은 여왕을 호위한다.</p>
+        </div>
+        <div class="col-lg-4" id = "Chesses">
 
+        </div>
+        <div class="col-lg-4" id = "Boards">
+          <table>
+            <tr>
+              <td id = "Chess_1">1</td>
+              <td id = "Chess_2">2</td>
+            </tr>
+            <tr>
+              <td id = "Chess_3">3</td>
+              <td id = "Chess_4">4</td>
+            </tr>
+            <tr>
+              <td id = "Chess_5">5</td>
+              <td id = "Chess_6">6</td>
+            </tr>
+            <tr>
+              <td id = "Chess_7">7</td>
+              <td id = "Chess_8">8</td>
+            </tr>
+            <tr>
+              <td id = "Chess_9">9</td>
+              <td id = "Chess_10">10</td>
+            </tr>
+            <tr>
+              <td id = "Chess_11">11</td>
+              <td id = "Chess_12">12</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="Chess_Clear">
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Chess.js"></script>
   </body>
 </html>

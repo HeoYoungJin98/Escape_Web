@@ -2,6 +2,7 @@
 document.getElementById("face").addEventListener("click",Face_pop);
 function Face_pop(){
     document.getElementById("Face_modal").style.display = "flex";
+    alert("섬뜩하게 생긴 얼굴이다.");
 }
 document.getElementById("Face_modal").addEventListener("click",Face_Remove);
 function Face_Remove(){
@@ -62,6 +63,7 @@ function View_Back(){
 document.getElementById("View_Post").addEventListener("click",Post_pop);
 function Post_pop(){
     document.getElementById("Post_modal").style.display = "flex";
+    alert("이상한 문자들이 적힌 포스트잇이다.");
 }
 document.getElementById("Post_modal").addEventListener("click",Post_Remove);
 function Post_Remove(){
@@ -83,6 +85,7 @@ function destroy(){
     }
     else if(State === 2){
         document.getElementById("destroy_modal").style.display = "flex";
+        alert("강가에 비친 풍경이다. 무엇을 의미하는 걸까");
         document.getElementById("destroy_modal").addEventListener("click",Face_Remove);
         function Face_Remove(){
             document.getElementById("destroy_modal").style.display = "none";
@@ -99,6 +102,7 @@ document.getElementById("View_Lock_1").addEventListener("click",DoorLock_pop);
 function DoorLock_pop(){
     document.getElementById("DoorLock_modal").style.display = "flex";
     Input_Array.length = 0;
+    alert("도어락 하단에 작게 *=c 0=O #=r이라고 적혀 있다.");
 }
 document.getElementById("DoorLock").addEventListener("click",DoorLock_Remove);
 function DoorLock_Remove(){
@@ -212,6 +216,7 @@ function Safe_Input_Value(x){
             document.getElementById("View_Post").style.visibility = "hidden";
             document.getElementById("View_Lock_2").style.visibility = "hidden";
             document.getElementById("Get_hammer").style.visibility = "visible";
+            alert("금고를 열자 망치가 보인다. 어디에 쓸 수 있을까...");
         }
     }else{
         Safe_Input_Array.push(x);
