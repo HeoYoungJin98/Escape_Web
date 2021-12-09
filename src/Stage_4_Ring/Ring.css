@@ -1,0 +1,130 @@
+#Main{
+  width: 100%;
+  height: 100%;
+}
+
+#Main_Img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#Next_Room{
+  position: absolute;
+  width: 222px;
+  height: 220px;
+  left: 44%;
+  top: 31%;
+  opacity: 0;
+}
+
+#Ring{
+  position: absolute;
+  width: 73px;
+  height: 60px;
+  right: 27%;
+  top: 45%;
+  opacity: 0;
+}
+
+#Post{
+  position: absolute;
+  width: 60px;
+  height: 45px;
+  right: 19%;
+  bottom: 33%;
+  opacity: 0;
+}
+#Ring_Modal{
+  display: none;
+}
+
+#Ring_Modal_Img{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 39%;
+  top: 20%;
+}
+
+.btn{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+#n1{
+  right: 35%;
+  top: 37%;
+  opacity: 0;
+}
+
+#n2{
+  right: 37%;
+  top: 28%;
+  opacity: 0;
+}
+
+#n3{
+  right: 42%;
+  top: 23%;
+  opacity: 0;
+}
+
+#n4{
+  left: 49%;
+  top: 23%;
+  opacity: 0;
+}
+
+#n5{
+  left: 44%;
+  top: 27%;
+  opacity: 0;
+}
+
+#n6{
+  left: 41%;
+  top: 35%;
+  opacity: 0;
+}
+
+#n7{
+  left: 40%;
+  bottom: 46%;
+  opacity: 0;
+}
+
+#n8{
+  left: 42%;
+  bottom: 37%;
+  opacity: 0;
+}
+
+#n9{
+  left: 46%;
+  bottom: 30%;
+  opacity: 0;
+}
+
+#n0{
+  left: 51%;
+  bottom: 27%;
+  opacity: 0;
+}
+
+#Post_Modal{
+  display: none;
+}
+
+#Post_Modal_Img{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 37%;
+  top: 17%;
+}

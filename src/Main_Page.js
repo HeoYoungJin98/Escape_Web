@@ -7,7 +7,7 @@ $(document).ready(function(){
     location.href = "Stage_2_HallWay/HallWay.html";
   });
   $("#Stage_3").on("click",function(){
-    location.href = "Stage_3_Chess/Chess.js";
+    location.href = "Stage_3_Chess/Chess.html";
   });
 
   $("#Notice_button").on("click",function(){

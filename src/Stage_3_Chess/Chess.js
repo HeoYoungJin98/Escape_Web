@@ -61,13 +61,15 @@ $(document).ready(function(){
 
   $("#Chess_Modal").on("click",function(){
     $(this).css("display","none");
+    $("#Chess_default_img").css("filter","brightness(100%)");
   });
 
   $("#View_Chess").on("click",function(){
     $("#Chess_Modal").css("display","flex");
+    $("#Chess_default_img").css("filter","brightness(40%)");
   });
 
   $("#Next_Room").on("click",function(){
-    window.location = "../Stage_4_Stairs/Stairs.html";
+    window.location = "../Stage_4_Ring/Ring.html";
   })
 })
