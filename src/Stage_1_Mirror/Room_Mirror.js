@@ -5,11 +5,13 @@ $(document).ready(function(){
 document.getElementById("face").addEventListener("click",Face_pop);
 function Face_pop(){
     document.getElementById("Face_modal").style.display = "flex";
+    $("#Front_Wall_IMG").css("filter","brightness(40%)");
     alert("섬뜩하게 생긴 얼굴이다.");
 }
 document.getElementById("Face_modal").addEventListener("click",Face_Remove);
 function Face_Remove(){
     document.getElementById("Face_modal").style.display = "none";
+    $("#Front_Wall_IMG").css("filter","brightness(100%)");
 }
 /* ---------------------View Face--------------------- */
 /* ---------------------Room Change--------------------- */
@@ -66,11 +68,13 @@ function View_Back(){
 document.getElementById("View_Post").addEventListener("click",Post_pop);
 function Post_pop(){
     document.getElementById("Post_modal").style.display = "flex";
+    $("#Left_Wall_IMG").css("filter","brightness(40%)");
     alert("이상한 문자들이 적힌 포스트잇이다.");
 }
 document.getElementById("Post_modal").addEventListener("click",Post_Remove);
 function Post_Remove(){
     document.getElementById("Post_modal").style.display = "none";
+    $("#Left_Wall_IMG").css("filter","brightness(100%)");
 }
 /* ---------------------Room_Left View Post--------------------- */
 /* ---------------------Room_Back Destroy Picture Use Hammer--------------------- */
@@ -78,6 +82,9 @@ let hammer = 0;
 let State = 0;
 document.getElementById("Destroy").addEventListener("click",destroy);
 function destroy(){
+    if(hammer === 0){
+      alert("단단한 물건으로 내리치면 깰 수 있을 듯한 유리이다.");
+    }
     if(hammer === 1 && State === 0){
         document.getElementById("Back_Wall_IMG").src = "../../img/Room_Mirror/Room_Mirror_back_destroying.jpeg";
         State = 1;
@@ -88,10 +95,12 @@ function destroy(){
     }
     else if(State === 2){
         document.getElementById("destroy_modal").style.display = "flex";
+        $("#Back_Wall_IMG").css("filter","brightness(40%)");
         alert("강가에 비친 풍경이다. 무엇을 의미하는 걸까");
         document.getElementById("destroy_modal").addEventListener("click",Face_Remove);
         function Face_Remove(){
             document.getElementById("destroy_modal").style.display = "none";
+            $("#Back_Wall_IMG").css("filter","brightness(100%)");
         }
     }
 }
@@ -106,9 +115,11 @@ function DoorLock_pop(){
     document.getElementById("DoorLock_modal").style.display = "flex";
     Input_Array.length = 0;
     alert("도어락 하단에 작게 *=clear 0=OK #=remove 라고 적혀 있다.");
+    $("#Front_Wall_IMG").css("filter","brightness(40%)");
 }
 document.getElementById("DoorLock").addEventListener("click",DoorLock_Remove);
 function DoorLock_Remove(){
+    $("#Front_Wall_IMG").css("filter","brightness(100%)");
     document.getElementById("DoorLock_modal").style.display = "none";
     Input_Array.length = 0;
     document.getElementById("display").innerHTML = "";

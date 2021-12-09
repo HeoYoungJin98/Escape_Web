@@ -1,10 +1,19 @@
+#body{
+  background-image: url("../img/Main/Main_back.jpeg");
+}
+
 #Banner_Text{
     text-align: center;
     border-bottom: solid 4px skyblue;
-    padding-bottom: 4px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    color: White;
+    font-family: 'Dokdo', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    height: 80px;
 }
 
-#Theme_Block{
+#Stage_Block{
     border: solid 4px powderblue;
     height: 400px;
 }
@@ -14,19 +23,37 @@
     text-align: center;
     font-size: 30px;
     margin: 20px;
+    color: White;
 }
 
-#Choice_Theme{
-    margin: 20px;
-}
-
-#Theme_1{
+#Stage_1{
     background-image: url("../img/Room_Mirror/Room_Mirror_Face.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80px;
     height: 84px;
     width: 84px;
+    margin: 10px;
+}
+
+#Stage_2{
+  background-image: url("../img/HallWay/Elevator.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+  height: 84px;
+  width: 84px;
+  margin: 10px;
+}
+
+#Stage_3{
+  background-image: url("../img/Chess/Chess_King.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+  height: 84px;
+  width: 84px;
+  margin: 10px;
 }
 
 #Login_Block{

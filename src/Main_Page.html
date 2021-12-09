@@ -10,15 +10,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="Main_Page.css" rel="stylesheet">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id = "body">
     <h1 id = "Banner_Text">Escape Web</h1>
-    <br>
     <div class = "row">
-        <div class = "col-lg-8" id = "Theme_Block">
-            <p id = "Choice_Theme_Text">테마를 선택하세요</p>
-            <div class="col-lg-1.5" id = "Choice_Theme">
-                <button id = "Theme_1"></button>
+        <div class = "col-lg-8" id = "Stage_Block">
+            <p id = "Choice_Theme_Text">스테이지를 선택하세요</p>
+            <div class="col-lg-1.5" id = "Choice_Stage_1">
+                <button id = "Stage_1"></button>
+                <button id = "Stage_2"></button>
+                <button id = "Stage_3"></button>
+            </div>
+            <div class="col-lg-1.5" id = "Choice_Stage_2">
             </div>
         </div>
         <div class = "col-lg-4" id = "Login_Block">
@@ -47,7 +53,7 @@
             <button type="button" name="Free_button" class = "button" id = "Free_button">자유게시판</button>
           </div>
           <div class="Boards">
-
+              
           </div>
         </div>
         <div class = "col-lg-4" id = "AD">

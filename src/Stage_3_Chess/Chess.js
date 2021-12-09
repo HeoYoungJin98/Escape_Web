@@ -68,6 +68,6 @@ $(document).ready(function(){
   });
 
   $("#Next_Room").on("click",function(){
-    window.location = "../Success_Page/Success_page.html";
+    window.location = "../Stage_4_Stairs/Stairs.html";
   })
 })
