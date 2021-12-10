@@ -176,6 +176,7 @@ function Test(){
             Previous_display = "";
             document.getElementById("display").innerHTML = Present_display;
             result = 0;
+            break;
         }
     }
     if(result === 1){
@@ -184,6 +185,7 @@ function Test(){
         document.getElementById("View_Lock_1").style.visibility = "hidden";
         document.getElementById("face").style.visibility = "hidden";
         document.getElementById("Escape").style.visibility = "visible";
+        $("#Front_Wall_IMG").css("filter","brightness(100%)");
     }
 }
 /* ---------------------DoorLock--------------------- */
@@ -221,6 +223,7 @@ function Safe_Input_Value(x){
                 Safe_Previous_display = "";
                 document.getElementById("display_Safe").innerHTML = Safe_Present_display;
                 result = 0;
+                break;
             }
         }
         if(result === 1){

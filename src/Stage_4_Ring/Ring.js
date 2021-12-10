@@ -58,7 +58,7 @@ $(document).ready(function(){
 
     if(Input_arr.length > 10){
       $("#Ring_Modal").css("display","none");
-      $("#Ring_Modal_Img").css("filter","brightness(100%)");
+      $("#Main_Img").css("filter","brightness(100%)");
       Input_arr.length = 0;
       alert("전화가 걸리지 않는다.");
     };
@@ -76,7 +76,7 @@ $(document).ready(function(){
     if(Is_Correct == 1){
       alert("큰 소리와 함께 건물이 흔들린다. 무슨 일이 일어난 거지?");
       $("#Ring_Modal").css("display","none");
-      $("#Ring_main").css("filter","brightness(100%)");
+      $("#Main_Img").css("filter","brightness(100%)");
     }
   };
 
@@ -86,6 +86,7 @@ $(document).ready(function(){
         Is_Correct = 2;
       }else{
         Is_Correct = 0;
+        break;
       };
     };
 
