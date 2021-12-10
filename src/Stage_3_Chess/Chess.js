@@ -1,6 +1,7 @@
 $(document).ready(function(){
   alert("알 수 없는 방에 또 들어왔다. 여긴 대체 어디인 걸까...");
-
+  alert("배고픔이 점점 심해진다. 슬슬 힘들어지기 시작했다.");
+  
   $("#window").on("click",function(){
     alert("굳게 닫혀 열리지 않는 문이다. 첫 방처럼 암호가 있는 걸까?");
   });

@@ -1,5 +1,6 @@
 $(document).ready(function(){
   alert("정신을 차려보니 이상한 방에 갇혀있다. 내가 왜 여기 있는 거지?");
+  alert("시간이 얼마나 지난걸까 배가 무척이나 고프다.");
 })
 /* ---------------------View Face--------------------- */
 document.getElementById("face").addEventListener("click",Face_pop);

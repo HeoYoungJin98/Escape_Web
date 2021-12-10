@@ -39,6 +39,7 @@
   bottom: 33%;
   opacity: 0;
 }
+
 #Ring_Modal{
   display: none;
 }
@@ -127,4 +128,55 @@
   height: 400px;
   left: 37%;
   top: 17%;
+}
+
+#Ring_HallWay{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#HallWay_Img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#Dish{
+  position: absolute;
+  width: 110px;
+  height: 60px;
+  right: 39%;
+  bottom: 23%;
+  opacity: 0;
+}
+
+#leaflet{
+  position: absolute;
+  width: 67px;
+  height: 50px;
+  right: 18%;
+  bottom: 13%;
+  opacity: 0;
+}
+
+#leaflet_Modal_Img{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 20%;
+  left: 37%;
+  display: none;
+}
+
+#GotoMain{
+  position: absolute;
+  width: 98%;
+  height: 90px;
+  bottom: 0;
+  opacity: 0;
 }

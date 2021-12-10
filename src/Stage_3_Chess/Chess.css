@@ -92,11 +92,11 @@ td{
   color: black;
 }
 
-#Chess_2, #Chess_3, #Chess_6, #Chess_7, #Chess_10, #Chess_11{
+#Chess_1, #Chess_2, #Chess_5, #Chess_6, #Chess_9, #Chess_10{
   background-color: ivory;
 }
 
-#Chess_1, #Chess_4, #Chess_5, #Chess_8, #Chess_9, #Chess_12{
+#Chess_0, #Chess_3, #Chess_4, #Chess_7, #Chess_8, #Chess_11{
   background-color: gray;
 }
 
