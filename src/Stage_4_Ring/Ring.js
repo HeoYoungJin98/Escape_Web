@@ -91,7 +91,8 @@ $(document).ready(function(){
 
     if(Is_Correct == 2){
         alert("사이렌 소리가 들린다. 경찰들이 도착한 것 같다.");
-        alert("드디어 이 지긋지긋한 곳에서 탈출이다!");
+        alert("무슨 이유로 여기에 끌려온 건지는 모르겠다. 실험을 하는 걸까?");
+        alert("머릿속이 복잡하지만 상관없다 드디어 이 지긋지긋한 곳에서 탈출이다!");
         $("#Ring_Modal").css("display","none");
         $("#Ring_main").css("filter","brightness(100%)");
     }

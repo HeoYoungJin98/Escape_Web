@@ -56,7 +56,17 @@
 }
 
 #Stage_4{
-  background-image: url("../img/Stairs/Stairs");
+  background-image: url("../img/Ring/Ring_main.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+  height: 84px;
+  width: 84px;
+  margin: 10px;
+}
+
+#Stage_5{
+  background-image: url("../img/Stairs/Stairs.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80px;

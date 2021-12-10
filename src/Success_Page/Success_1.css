@@ -1,0 +1,33 @@
+#Clear_Banner{
+  height: 50px;
+  text-align: center;
+  margin: 10px;
+}
+
+#banner{
+  font-size: 30px;
+  color: skyBlue;
+}
+
+#Rank{
+  height: 600px;
+  border: 2px solid darkgray;
+}
+
+#btn{
+  height: 10%;
+  text-align: right;
+}
+
+#GotoMain{
+  height: 30px;
+  font-size: 20px;
+  background-color: darkgray;
+  border-radius: 20px;
+}
+
+#body{
+  background-image: url("../../img/Main/Main_Clear.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

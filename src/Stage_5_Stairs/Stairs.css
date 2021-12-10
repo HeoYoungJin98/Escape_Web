@@ -12,3 +12,66 @@
   top: 0;
   bottom: 0;
 }
+
+#Up{
+  position: absolute;
+  width: 500px;
+  height: 270px;
+  opacity: 0;
+  top: 0;
+  left: 30%;
+}
+
+#arrive{
+  display: none;
+}
+#Arrive_Img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#Elevator{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 40%;
+  top: 22%;
+  opacity: 0;
+}
+
+#Elevator_btn{
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  right: 31%;
+  top: 31%;
+  opacity: 0;
+}
+
+#Deliver{
+  display: none;
+}
+
+#Deliver_Img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#Delieveryman{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 40%;
+  top: 22%;
+  opacity: 0;
+}
