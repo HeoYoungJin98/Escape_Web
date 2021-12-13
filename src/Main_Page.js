@@ -9,10 +9,10 @@ $(document).ready(function(){
   $("#Stage_3").on("click",function(){
     location.href = "Stage_3_Chess/Chess.html";
   });
-  $("#Stage_2").on("click",function(){
+  $("#Stage_4").on("click",function(){
     location.href = "Stage_4_Ring/Ring.html";
   });
-  $("#Stage_3").on("click",function(){
+  $("#Stage_5").on("click",function(){
     location.href = "Stage_5_Stairs/Stairs.html";
   });
 
